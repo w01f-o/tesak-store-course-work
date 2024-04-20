@@ -412,3 +412,99 @@ button {
     }
   }
 }
+
+.about {
+  &__row {
+    display: flex;
+    padding: 40px 40px 0;
+    color: #000;
+  }
+
+  &__img {
+    max-width: 20%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 40px 15px;
+  }
+
+  &__title {
+    font: {
+      size: 20px;
+      weight: 700;
+    }
+  }
+
+  &__text {
+    opacity: 0.7;
+  }
+
+  &__button {
+    background: #05550d;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+
+    font: {
+      size: 16px;
+    }
+  }
+}
+
+.footer {
+  margin-bottom: 40px;
+  &__container {
+    background: #ececec;
+  }
+
+  color: #000;
+
+  &__row {
+    display: flex;
+    padding: 50px 40px 100px;
+    gap: 120px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+  }
+
+  &__title {
+    font: {
+      size: 18px;
+      weight: 600;
+    }
+    padding-bottom: 8px;
+  }
+
+  &__link {
+    font: {
+      size: 16x;
+    }
+    text-decoration: none;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__button {
+    background: #05550d;
+    padding: 15px;
+  }
+}
