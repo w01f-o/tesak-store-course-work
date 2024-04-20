@@ -23,8 +23,35 @@ button {
 
 .container {
   max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .main {
   flex-grow: 1;
 }
@@ -70,6 +97,7 @@ button {
   font-size: 18px;
 }
 .header__logo {
+  width: 13%;
   font-size: 56px;
   text-align: center;
   text-transform: uppercase;
@@ -82,15 +110,18 @@ button {
   font-size: 48px;
 }
 .header__promo {
+  width: 20%;
   font-size: 18px;
   font-weight: 500;
   padding-left: 12px;
 }
 
+.nav {
+  width: 67%;
+}
 .nav__list {
   display: flex;
   justify-content: space-between;
-  padding-left: 12px;
   list-style: none;
   font-size: 18px;
   font-weight: 700;
@@ -125,19 +156,21 @@ button {
   color: #000;
 }
 .promo__button.btn-prev {
-  left: 10%;
+  left: 17%;
 }
 .promo__button.btn-next {
-  right: 10%;
+  right: 17%;
 }
 
 .links__row {
-  padding: 40px 30px 0;
+  display: flex;
+  padding: 40px 70px 0;
   justify-content: space-between;
 }
 .links__link {
   position: relative;
   text-transform: uppercase;
+  width: 25%;
   font-size: 32px;
   font-weight: 600;
 }
@@ -171,20 +204,22 @@ button {
 .catalog__tabs {
   display: flex;
   gap: 12px;
+  padding-left: 56px;
   font-size: 18px;
   font-weight: 700;
 }
 .catalog__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  gap: 20px;
+  padding: 20px 40px 0;
+  flex-wrap: wrap;
 }
 
 .product {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  width: 288px;
   flex-direction: column;
   align-items: center;
   padding: 20px 30px 30px;
