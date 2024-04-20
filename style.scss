@@ -33,39 +33,6 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width: 1600px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .container {
-    max-width: 1100px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .container {
-    max-width: 992px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-}
-
 .main {
   flex-grow: 1;
 
@@ -489,7 +456,7 @@ button {
 
   &__link {
     font: {
-      size: 16x;
+      size: 16px;
     }
     text-decoration: none;
   }
@@ -506,5 +473,290 @@ button {
   &__button {
     background: #05550d;
     padding: 15px;
+    border: none;
+  }
+}
+
+.burger {
+  display: none;
+
+  &__button {
+    position: relative;
+    width: 30px;
+    height: 40px;
+    margin-right: 12px;
+
+    span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      pointer-events: none;
+      height: 2px;
+      background: #fff;
+      &:nth-child(1) {
+        top: 10px;
+      }
+
+      &:nth-child(2) {
+        transform: translateY(-50%);
+        top: 50%;
+      }
+
+      &:nth-child(3) {
+        bottom: 10px;
+      }
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    visibility: hidden;
+    width: 50vw;
+    z-index: 999;
+    padding: 40px 20px;
+    height: 100%;
+    transition: .2s;
+    background: #fff;
+
+    &_open {
+      left: 0;
+      visibility: visible;
+      transition: .2s;
+    }
+
+    .nav {
+      display: flex;
+      &__list {
+        flex-direction: column;
+      }
+
+      &__link {
+        color: #000;
+        font: {
+          size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.body_backdrop {
+  &::before {
+    position: fixed;
+    content: "";
+    inset: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .promo {
+    &__button {
+      &.btn-prev {
+        left: 12%;
+      }
+
+      &.btn-next {
+        right: 12%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .catalog {
+    &__wrapper {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .product {
+    width: 30%;
+    margin-bottom: 12px;
+  }
+
+  .nav {
+    &__list {
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+
+  .promo {
+    &__button {
+      &.btn-prev {
+        left: 5%;
+      }
+
+      &.btn-next {
+        right: 5%;
+      }
+    }
+  }
+
+  .warning {
+    &__wrapper {
+      padding-bottom: 50px;
+    }
+
+    &__text {
+      padding-right: 30%;
+    }
+  }
+
+  .about {
+    &__img {
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .nav {
+    &__list {
+      gap: 12px;
+    }
+  }
+
+  .about {
+    &__info {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .product {
+    width: 48%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    &__logo {
+      width: auto;
+    }
+
+    &__promo {
+      display: none;
+    }
+  }
+
+  .header {
+    &__info {
+      .header__button {
+        display: none;
+      }
+    }
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .promo {
+    &__button {
+      display: none;
+    }
+  }
+
+  .warning {
+    &__wrapper {
+      padding: 40px 20px;
+    }
+
+    &__text {
+      padding-right: 40%;
+    }
+  }
+
+  .about {
+    &__img {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .footer {
+    &__row {
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .links {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      width: 100%;
+    }
+  }
+
+  .about {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      max-width: unset;
+      flex-grow: 1;
+      padding: 0 20px;
+    }
+
+    &__info {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    &__col {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .burger {
+    &__menu {
+      width: 70vw;
+    }
   }
 }
