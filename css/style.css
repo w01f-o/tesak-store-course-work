@@ -437,16 +437,6 @@ button {
   font-size: 24px;
 }
 
-.body_backdrop::before {
-  position: fixed;
-  content: "";
-  inset: 0;
-  z-index: 500;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .catalog {
   color: #000;
 }
@@ -897,6 +887,15 @@ button {
   }
   .burger {
     display: block;
+  }
+  .body_backdrop::before {
+    position: fixed;
+    content: "";
+    inset: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
   }
   .promo__button {
     display: none;
