@@ -130,12 +130,17 @@ button {
 .promo .swiper-wrapper {
   position: relative;
 }
+.promo .swiper-slide {
+  height: 100%;
+}
 .promo__img {
   display: flex;
   justify-content: center;
 }
 .promo__img img {
+  height: 630px;
   max-width: 80%;
+  object-fit: cover;
 }
 .promo__button {
   position: absolute;
@@ -864,6 +869,9 @@ button {
   }
   .about__info {
     padding: 20px;
+  }
+  .promo__img img {
+    height: 100%;
   }
 }
 @media (max-width: 992px) {

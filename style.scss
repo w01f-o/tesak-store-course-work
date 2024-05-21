@@ -174,11 +174,17 @@ button {
     position: relative;
   }
 
+  .swiper-slide {
+    height: 100%;
+  }
+
   &__img {
     display: flex;
     justify-content: center;
     img {
+      height: 630px;
       max-width: 80%;
+      object-fit: cover;
     }
   }
 
@@ -1167,6 +1173,14 @@ button {
   .about {
     &__info {
       padding: 20px;
+    }
+  }
+
+  .promo {
+    &__img {
+      img {
+        height: 100%;
+      }
     }
   }
 }
