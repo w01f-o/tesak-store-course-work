@@ -145,6 +145,19 @@ button {
 
   &__link {
     text-decoration: none;
+
+    &.active {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+      }
+    }
   }
 }
 

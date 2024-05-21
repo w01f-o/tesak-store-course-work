@@ -109,6 +109,18 @@ button {
 .nav__link {
   text-decoration: none;
 }
+.nav__link.active {
+  position: relative;
+}
+.nav__link.active::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
 
 .promo .swiper .swiper-pagination-bullet {
   background: #fff;
