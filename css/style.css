@@ -797,6 +797,31 @@ button {
   color: #555555;
 }
 
+.categories {
+  background: #f9f9f9;
+  width: 20%;
+  padding: 21px 30px;
+}
+.categories__title {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 21px;
+}
+.categories__list {
+  list-style: none;
+}
+.categories__item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-top: 21px;
+}
+.categories__item span {
+  color: #999999;
+  font-size: 13px;
+}
+
 .articles {
   display: flex;
   flex-grow: 1;
@@ -806,10 +831,13 @@ button {
   background: #fff;
 }
 .articles__row {
-  padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
 }
 .articles__content {
-  margin-left: 40px;
+  margin-right: 40px;
+  width: 80%;
 }
 .articles__link {
   display: flex;
@@ -839,6 +867,76 @@ button {
 }
 .articles__link-text {
   font-size: 15px;
+}
+
+.glossary {
+  color: #000;
+}
+.glossary__container {
+  background: #fff;
+}
+.glossary__row {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+}
+.glossary__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 40px;
+  width: 80%;
+}
+.glossary__separator {
+  border-bottom: 2px solid #000;
+}
+.glossary__separator-thin {
+  border-color: #eeeeee;
+  opacity: 0.2;
+}
+.glossary__item strong {
+  font-weight: 700;
+}
+.glossary__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.glossary__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: none;
+  border: 2px solid #eeeeee;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #125126;
+}
+.comments__button {
+  padding: 15px 25px;
+  background: none;
+  border: 1px solid #eeeeee;
+  border-top: 3px solid #125126;
+  font-size: 18px;
+}
+.comments__button-add {
+  padding: 8px 17px;
+  margin-top: 36px;
+  align-self: center;
+  background: none;
+  border: 1px solid #125126;
+  border-radius: 2px;
+  font-size: 18px;
+}
+.comments__separator {
+  align-self: stretch;
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1102,6 +1102,41 @@ button {
   }
 }
 
+.categories {
+  background: #f9f9f9;
+  width: 20%;
+  padding: 21px 30px;
+
+  &__title {
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 21px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-top: 21px;
+
+    span {
+      color: #999999;
+
+      font: {
+        size: 13px;
+      }
+    }
+  }
+}
+
 .articles {
   display: flex;
   flex-grow: 1;
@@ -1112,11 +1147,14 @@ button {
   }
 
   &__row {
-    padding: 40px 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
   }
 
   &__content {
-    margin-left: 40px;
+    margin-right: 40px;
+    width: 80%;
   }
 
   &__link {
@@ -1156,5 +1194,101 @@ button {
         size: 15px;
       }
     }
+  }
+}
+
+.glossary {
+  color: #000;
+
+  &__container {
+    background: #fff;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 40px;
+    width: 80%;
+  }
+
+  &__separator {
+    border-bottom: 2px solid #000;
+
+    &-thin {
+      border-color: #eeeeee;
+      opacity: 0.2;
+    }
+  }
+
+  &__item {
+    strong {
+      font: {
+        weight: 700;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    background: none;
+    border: 2px solid #eeeeee;
+    padding: 10px 20px;
+    font: {
+      size: 18px;
+    }
+  }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #125126;
+
+  &__button {
+    padding: 15px 25px;
+
+    background: none;
+    border: 1px solid #eeeeee;
+    border-top: 3px solid #125126;
+
+    font: {
+      size: 18px;
+    }
+  }
+
+  &__button-add {
+    padding: 8px 17px;
+    margin-top: 36px;
+    align-self: center;
+
+    background: none;
+    border: 1px solid #125126;
+    border-radius: 2px;
+
+    font: {
+      size: 18px;
+    }
+  }
+
+  &__separator {
+    align-self: stretch;
+    opacity: 0.2;
   }
 }

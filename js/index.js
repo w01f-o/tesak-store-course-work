@@ -30,3 +30,8 @@ document.querySelectorAll("header a").forEach((anchor) => {
     anchor.classList.add("active");
   }
 });
+
+document.querySelectorAll(".glossary__item").forEach((item) => {
+  const arrayOfWords = item.innerHTML.trim().split(" ");
+  item.innerHTML = `<strong>${arrayOfWords[0]}</strong> ${arrayOfWords.slice(1).join(" ")}`;
+});
