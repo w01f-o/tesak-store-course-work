@@ -255,10 +255,11 @@ button {
   position: relative;
   padding: 60px 40px 0;
 }
-.blog__img {
+.blog__link {
+  display: block;
   max-width: 70%;
 }
-.blog__img img {
+.blog__link img {
   width: 100%;
   cursor: pointer;
 }

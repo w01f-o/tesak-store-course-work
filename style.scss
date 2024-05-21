@@ -339,7 +339,8 @@ button {
     padding: 60px 40px 0;
   }
 
-  &__img {
+  &__link {
+    display: block;
     max-width: 70%;
     img {
       width: 100%;
