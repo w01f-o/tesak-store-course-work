@@ -235,7 +235,7 @@ button {
   }
 }
 
-.catalog {
+.promo {
   color: #000;
 
   &__row {
@@ -785,6 +785,8 @@ button {
 }
 
 .catalog {
+  color: #000;
+
   &__container {
     background: #fff;
   }
@@ -822,6 +824,12 @@ button {
       }
 
       color: #5d5d5d;
+    }
+
+    &-img {
+      img {
+        max-width: 100%;
+      }
     }
 
     &-name {
@@ -994,6 +1002,65 @@ button {
 
     &__link {
       text-decoration: none;
+    }
+  }
+}
+
+.services {
+  color: #000;
+
+  &__container {
+    background: #fff;
+  }
+
+  &__row {
+    display: flex;
+    padding: 40px;
+  }
+
+  &__content {
+    width: 80%;
+    margin-left: 40px;
+  }
+}
+
+.help {
+  color: #000;
+
+  &__container {
+    background: #fff;
+  }
+
+  &__row {
+    display: flex;
+    padding: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 40px;
+    width: 80%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    &-title {
+      font: {
+        size: 28px;
+        weight: 700;
+      }
+    }
+
+    &-text {
+      font: {
+        size: 15px;
+      }
+      color: #555555;
     }
   }
 }

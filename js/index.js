@@ -24,3 +24,9 @@ document.body.addEventListener("click", (e) => {
     document.body.classList.remove("body_backdrop");
   }
 });
+
+document.querySelectorAll("header a").forEach((anchor) => {
+  if (anchor.href === window.location.href) {
+    anchor.classList.add("active");
+  }
+});
