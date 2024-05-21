@@ -29,9 +29,12 @@ button {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 .main__container {
+  flex-grow: 1;
   padding: 12px 0;
   background: #fff;
 }
@@ -792,6 +795,50 @@ button {
 .help__item-text {
   font-size: 15px;
   color: #555555;
+}
+
+.articles {
+  display: flex;
+  flex-grow: 1;
+  color: #000;
+}
+.articles__container {
+  background: #fff;
+}
+.articles__row {
+  padding: 40px 0;
+}
+.articles__content {
+  margin-left: 40px;
+}
+.articles__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 2px solid #eeeeee;
+  max-width: 650px;
+  width: 100%;
+}
+.articles__link-img {
+  display: flex;
+}
+.articles__link-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.articles__link-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16.5px;
+  padding: 20px;
+}
+.articles__link-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.articles__link-text {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
