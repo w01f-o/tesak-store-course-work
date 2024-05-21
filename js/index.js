@@ -10,17 +10,17 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const burgerButton = document.querySelector('.burger__button');
-const burgerMenu = document.querySelector('.burger__menu');
+const burgerButton = document.querySelector(".burger__button");
+const burgerMenu = document.querySelector(".burger__menu");
 
-burgerButton.addEventListener('click', () => {
-  burgerMenu.classList.toggle('burger__menu_open');
-  document.body.classList.toggle('body_backdrop');
-})
+burgerButton.addEventListener("click", () => {
+  burgerMenu.classList.toggle("burger__menu_open");
+  document.body.classList.toggle("body_backdrop");
+});
 
-document.body.addEventListener('click', (e) => {
-  if (!e.target.matches('.burger__button')) {
-    burgerMenu.classList.remove('burger__menu_open');
-    document.body.classList.remove('body_backdrop');
+document.body.addEventListener("click", (e) => {
+  if (!e.target.matches(".burger__button")) {
+    burgerMenu.classList.remove("burger__menu_open");
+    document.body.classList.remove("body_backdrop");
   }
-})
+});
