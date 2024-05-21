@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Tesak store</title>
   </head>
   <body>
     <header class="header">
@@ -33,21 +32,27 @@
           </div>
         </div>
         <div class="header__row">
-          <div class="header__logo"><span>Tesak</span><br> store</div>
+          <a class="header__logo" href="./index.html">
+            <span> Tesak </span>
+            <br />
+            store
+          </a>
           <div class="header__promo">
             Интернет-магазин ножей с доставкой по России
           </div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link">Каталог</a>
+                <a href="./catalog.html" class="nav__link">Каталог</a>
               </li>
-              <li class="nav__item"><a href="#" class="nav__link">Ещё</a></li>
+              <li class="nav__item">
+                <a href="./services.html" class="nav__link">Ещё</a>
+              </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Акции</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Статьи</a>
+                <a href="./articles.html" class="nav__link">Статьи</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Новости</a>
@@ -71,14 +76,16 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Каталог</a>
+                    <a href="./catalog.html" class="nav__link">Каталог</a>
                   </li>
-                  <li class="nav__item"><a href="#" class="nav__link">Ещё</a></li>
+                  <li class="nav__item">
+                    <a href="./services.html" class="nav__link">Ещё</a>
+                  </li>
                   <li class="nav__item">
                     <a href="#" class="nav__link">Акции</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Статьи</a>
+                    <a href="./articles.html" class="nav__link">Статьи</a>
                   </li>
                   <li class="nav__item">
                     <a href="#" class="nav__link">Новости</a>
@@ -320,7 +327,7 @@
                 <a href="#" class="footer__link">Акции</a>
               </li>
               <li class="li footer__item">
-                <a href="#" class="footer__link">Статьи</a>
+                <a href="./articles.html" class="footer__link">Статьи</a>
               </li>
               <li class="li footer__item">
                 <a href="#" class="footer__link">Новости</a>
@@ -345,7 +352,7 @@
             <h5 class="footer__title">Каталог</h5>
             <ul class="footer__list">
               <li class="li footer__item">
-                <a href="#" class="footer__link">Ещё</a>
+                <a href="./services.html" class="footer__link">Ещё</a>
               </li>
               <li class="li footer__item">
                 <a href="#" class="footer__link">Бренды</a>
@@ -357,7 +364,7 @@
             <label for="email" class="footer__label">
               <input
                 type="email"
-                name="email"
+                id="email"
                 placeholder="Ваш email"
                 class="footer__input"
               />
